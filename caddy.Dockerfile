@@ -3,7 +3,7 @@ FROM quay.io/spivegin/php7
 WORKDIR /opt/tlm/html 
 
 
-RUN git clone https://github.com/DanielnetoDotCom/YouPHPTube.git &&\
+RUN git clone https://github.com/trh-docker/YouPHPTube-encoder.git &&\
     chown -R www-data:www-data .
     
 

@@ -10,7 +10,7 @@ RUN apt-get update &&\
 
 RUN pip install -U youtube-dl &&\
     rm -rf /var/www/html && mkdir /var/www/html && cd /var/www/html &&\
-    git clone https://github.com/DanielnetoDotCom/YouPHPTube.git . &&\
+    git clone https://github.com/trh-docker/YouPHPTube-encoder.git . &&\
     install -d -m 0755 -o www-data -g www-data /var/www/html/videos &&\
     chown -R www-data:www-data . &&\
     apt-get autoclean && apt-get autoremove &&\
